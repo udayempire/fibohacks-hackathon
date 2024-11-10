@@ -7,6 +7,7 @@ import { Cards } from "../Components/Cards"
 import { useState, useEffect } from "react"
 import { Button } from "../Components/ui/Button";
 import { JobCard } from "../Components/JobCard";
+import { Footer } from "../Components/Footer";
 export const Home = () => {
     const [time, setTime] = useState({
         hours: 15,
@@ -142,6 +143,7 @@ export const Home = () => {
                     <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300 mt-5" />
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };
