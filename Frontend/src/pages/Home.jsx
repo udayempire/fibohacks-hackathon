@@ -41,7 +41,7 @@ export const Home = () => {
                 <div className="absolute top-0 left-0 w-full">
                     <Appbar />
                 </div>
-                <div className="text-3xl mt-10">
+                <div className="text-3xl mt-10 ">
                     <p className="font-extrabold text-white text-center">
                         Discover <span className="text-yellow-400">Exciting Events</span> happening near you and
                     </p>
@@ -61,16 +61,16 @@ export const Home = () => {
                 </div>
             </div>
             <div className="w-full flex justify-center">
-                <div className="flex justify-center max-w-3xl w-fullmbg-green-500" >
+                <div className="flex justify-center w-full max-w-3xl w-fullmbg-green-500" >
                     <ToggleSwitch />
                 </div>
             </div>
 
-            {/* Popular Events  */}
-            <h1 className="text-2xl font-semibold px-10 ">Popular Events in India</h1>
+{/* Popular Events  */}
+            <h1 className="text-3xl font-semibold px-20 ">Popular Events in India</h1>
             <div className="px-16 py-5 ">
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-orange-100 rounded-lg">
-                    {popularEvents.slice(0,6).map((data, index) => (
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-orange-100 rounded-sm">
+                    {popularEvents.slice(0, 6).map((data, index) => (
                         <Cards key={index} events={data} />
                     ))}
                 </div>
@@ -78,35 +78,35 @@ export const Home = () => {
             <div className="flex justify-center w-full">
                 <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" />
             </div>
-            {/* rgpv fibohack  */}
-            <div className="flex p-10  ">
-                <div ><img src="welcomeFibohack.png"  alt="" /></div>
-                <div className="flex flex-col gap-4 w-screen rounded-r-2xl" style={{background:"rgba(52, 122, 99, 1)"}}>
+{/* rgpv fibohack  */}
+            <div className="flex p-16  ">
+                <div ><img src="welcomeFibohack.png" alt="" /></div>
+                <div className="flex flex-col gap-4 w-screen rounded-r-2xl" style={{ background: "rgba(52, 122, 99, 1)" }}>
                     <div className="flex gap-8 mt-10  px-48 justify-center mr-24 items-center">
                         {/* date */}
-                        <div className="p-2 border-dashed rounded-lg border-white border-2 h-16 w-24 flex flex-col justify-center items-center" style={{background: "rgba(255, 255, 255, 0.1)"}}>
+                        <div className="p-2 border-dashed rounded-lg border-white border-2 h-16 w-24 flex flex-col justify-center items-center" style={{ background: "rgba(255, 255, 255, 0.1)" }}>
                             <h1 className="text-white font-semibold text-xl">Nov</h1>
                             <p className="font-semibold">22-01</p>
                         </div>
                         {/* time  */}
-                        <div className="flex gap-10  p-4 border-2 rounded-lg border-white justify-center items-center bg-green-600 text-white" style={{background: "rgba(255, 255, 255, 0.1)"}}
+                        <div className="flex gap-10  p-4 border-2 rounded-lg border-white justify-center items-center bg-green-600 text-white" style={{ background: "rgba(255, 255, 255, 0.1)" }}
                         >
                             <div className="flex flex-col items-center">
-                                <h1 className="text-6xl font-semibold">{String(time.hours).padStart(2, '0') }</h1>
+                                <h1 className="text-6xl font-semibold">{String(time.hours).padStart(2, '0')}</h1>
                                 <p className="text-2xl font-extralight">HOURS</p>
                             </div>
                             <div className="flex flex-col items-center">
-                                <h1 className="text-6xl font-semibold">{String(time.minutes).padStart(2, '0') }</h1>
+                                <h1 className="text-6xl font-semibold">{String(time.minutes).padStart(2, '0')}</h1>
                                 <p className="text-2xl font-extralight">MINUTES</p>
                             </div>
                             <div className="flex flex-col items-center">
-                                <h1 className="text-6xl font-semibold">{String(time.seconds).padStart(2, '0') }</h1>
+                                <h1 className="text-6xl font-semibold">{String(time.seconds).padStart(2, '0')}</h1>
                                 <p className="text-2xl font-extralight">SECONDS</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex justify-center gap-5">
-                        <Button text="SOIT, RGPV" className="w-48"/>
+                        <Button text="SOIT, RGPV" className="w-48" />
                         <Button text={"OFFLINE"} className="w-48" />
                         <Button text={"500+ Participating Students"} className="w-54" />
                     </div>
@@ -118,10 +118,22 @@ export const Home = () => {
 
 {/* best online event  */}
 
-            <h1 className="text-2xl font-semibold px-10 ">Discover Best of Online Events</h1>
+            <h1 className="font-semibold px-20 text-3xl ">Discover Best of Online Events</h1>
             <div className="px-16 py-5 ">
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-pink-50 rounded-lg">
-                    {popularEvents.slice(0,3).map((data, index) => (
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-pink-50 rounded-sm">
+                    {popularEvents.slice(0, 3).map((data, index) => (
+                        <Cards key={index} events={data} />
+                    ))}
+                </div>
+            </div>
+            <div className="flex justify-center w-full">
+                <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" />
+            </div>
+{/* // Featured Opportunites*/}
+            <h1 className="text-3xl font-semibold px-20"> <span className="font-semibold text-blue-700">Featured</span> <span className="text-yellow-500">Opportunties</span>  </h1>
+            <div className="px-16 py-5 ">
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-pink-50 rounded-sm">
+                    {popularEvents.slice(0, 3).map((data, index) => (
                         <Cards key={index} events={data} />
                     ))}
                 </div>
