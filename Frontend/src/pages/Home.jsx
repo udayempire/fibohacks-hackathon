@@ -8,6 +8,7 @@ import { useState, useEffect } from "react"
 import { Button } from "../Components/ui/Button";
 import { JobCard } from "../Components/JobCard";
 import { Footer } from "../Components/Footer";
+import { Lock } from "lucide-react";
 export const Home = () => {
     const [time, setTime] = useState({
         hours: 15,
@@ -111,7 +112,15 @@ export const Home = () => {
                         <Button text={"500+ Participating Students"} className="w-54" />
                     </div>
                     <div className="flex justify-center  ">
-                        <Button text={"Apply Now"} className="w-[670px] bg-green-800 border-0 text-white font-semibold" />
+                        <Button
+                            text={
+                                <div className="flex items-center justify-center gap-2 w-full">
+                                    <Lock className="h-4 w-4" />
+                                    <span>Get Started</span>
+                                </div>
+                            }
+                            className="w-[670px] bg-green-800 hover:bg-green-900 border-0 text-white font-semibold flex items-center justify-center"
+                        />
                     </div>
                 </div>
             </div>
@@ -143,7 +152,7 @@ export const Home = () => {
                     <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300 mt-5" />
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };

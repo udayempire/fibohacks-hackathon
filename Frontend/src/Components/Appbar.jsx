@@ -5,8 +5,8 @@ export const Appbar = () => {
         <div className="flex justify-between items-center p-2 px-4 op">
             <h1 className="text-white">Eventify</h1>
             <div className="flex gap-8 text-white font-semibold">
-                <Link>Home</Link>
-                <Link>Events</Link>
+                <Link to="/">Home</Link>
+                <Link to={"/events"}>Events</Link>
                 <Link>About</Link>
                 <Link>Contact</Link>
             </div>
