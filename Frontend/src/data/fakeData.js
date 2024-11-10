@@ -117,3 +117,76 @@ export const popularEvents=[
         interested:"48 interested"
     },
 ]
+
+export const jobData=[
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+    {
+        applyDate:"8 DEC,2024",
+        jobType:"VOLUNTEER",
+        title:"Digital Marketer",
+        desc:"Join our team as an Digital  Marketing Specialist and lead our digital outreach efforts",
+        location:"Bhopal,Madhya Pradesh"
+    },
+]

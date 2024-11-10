@@ -1,6 +1,6 @@
 export const Cards = ({ events }) => {
     return <div>
-        <div className="flex flex-col bg-white rounded-lg">
+        <div className="flex flex-col bg-white rounded-lg drop-shadow-xl">
             <img src={events.coverImg} alt="" />
             <div className="flex gap-4 p-4">
                 <div className="">

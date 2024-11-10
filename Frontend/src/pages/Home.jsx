@@ -2,12 +2,11 @@ import { Appbar } from "../Components/Appbar";
 import { Categories } from "../Components/Categories";
 import { Searchbar } from "../Components/ui/Searchbar";
 import { ToggleSwitch } from "../Components/toggleSwitch";
-import { exploreCategories } from "../data/fakeData";
-import { popularEvents } from "../data/fakeData";
+import { exploreCategories, popularEvents, jobData } from "../data/fakeData";
 import { Cards } from "../Components/Cards"
 import { useState, useEffect } from "react"
 import { Button } from "../Components/ui/Button";
-
+import { JobCard } from "../Components/JobCard";
 export const Home = () => {
     const [time, setTime] = useState({
         hours: 15,
@@ -66,8 +65,8 @@ export const Home = () => {
                 </div>
             </div>
 
-{/* Popular Events  */}
-            <h1 className="text-3xl font-semibold px-20 ">Popular Events in India</h1>
+            {/* Popular Events  */}
+            <h1 className="text-3xl font-semibold px-20 mt-10">Popular Events in India</h1>
             <div className="px-16 py-5 ">
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-orange-100 rounded-sm">
                     {popularEvents.slice(0, 6).map((data, index) => (
@@ -78,7 +77,7 @@ export const Home = () => {
             <div className="flex justify-center w-full">
                 <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" />
             </div>
-{/* rgpv fibohack  */}
+            {/* rgpv fibohack  */}
             <div className="flex p-16  ">
                 <div ><img src="welcomeFibohack.png" alt="" /></div>
                 <div className="flex flex-col gap-4 w-screen rounded-r-2xl" style={{ background: "rgba(52, 122, 99, 1)" }}>
@@ -116,7 +115,7 @@ export const Home = () => {
                 </div>
             </div>
 
-{/* best online event  */}
+            {/* best online event  */}
 
             <h1 className="font-semibold px-20 text-3xl ">Discover Best of Online Events</h1>
             <div className="px-16 py-5 ">
@@ -129,17 +128,19 @@ export const Home = () => {
             <div className="flex justify-center w-full">
                 <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" />
             </div>
-{/* // Featured Opportunites*/}
-            <h1 className="text-3xl font-semibold px-20"> <span className="font-semibold text-blue-700">Featured</span> <span className="text-yellow-500">Opportunties</span>  </h1>
+            {/* // Featured Opportunites*/}
+            <h1 className="text-3xl font-semibold px-20 mt-10"> <span className="font-semibold text-blue-700">Featured</span> <span className="text-yellow-500">Opportunties</span>  </h1>
+
             <div className="px-16 py-5 ">
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-pink-50 rounded-sm">
-                    {popularEvents.slice(0, 3).map((data, index) => (
-                        <Cards key={index} events={data} />
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-orange-100 rounded-sm"
+                    style={{ background: "rgba(247, 245, 255, 1)" }}>
+                    {jobData.slice(0, 9).map((data, index) => (
+                        <JobCard key={index} jobs={data} />
                     ))}
                 </div>
-            </div>
-            <div className="flex justify-center w-full">
-                <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" />
+                <div className="flex justify-center w-full">
+                    <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300 mt-5" />
+                </div>
             </div>
         </div>
     );
