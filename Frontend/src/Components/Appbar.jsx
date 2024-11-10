@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Button } from "./Button"
+import { Button } from "./ui/Button"
 export const Appbar = () => {
     return <div className="bg-blue-950 drop-shadow-lg">
         <div className="flex justify-between items-center p-2 px-4 op">

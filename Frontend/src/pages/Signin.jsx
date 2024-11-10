@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Button } from "../Components/Button";
-import { Input } from "../Components/Input";
+import { Button } from "../Components/ui/Button";
+import { Input } from "../Components/ui/Input";
 export const Signin = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 w-screen h-screen bg-zinc-50">
