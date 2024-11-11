@@ -192,93 +192,197 @@ export const jobData=[
 ]
 export const HackathonData=[
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Offline",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+    {
+        title: "Eth Salvador 2024",
+        month: "Dec",
+        date: "16",
+        location: "Gurgaon, India",
+        status: "open",
+        mode: "Online",
+        interested: "250",
+        coverImg: "hackathon.png"
+    },
+
+
+]
+
+export const EntertaimentData=[
+    {
+        
+        coverImg:"/enter.png",
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
     },
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        coverImg:"/enter.png",
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
     },
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        coverImg:"/enter.png",
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
     },
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        coverImg:"enter.png",
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
     },
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        coverImg:"enter.png",
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
     },
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        coverImg:"enter.png",
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
     },
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        coverImg:"enter.png",
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
     },
     {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
+        coverImg:"enter.png",  
+        title:"Blackpink Girls 2024 Concert X Atif Aslam Sings",
+        desc:"We’ll get you directly seated and inside for you to enjoy the show.",
+        month:"Apr",
+        date:"17",
         location:"Gurgaon, India",
         status:"open",
         mode:"Online",
         interested:"250"
-    },
-    {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
-        location:"Gurgaon, India",
-        status:"open",
-        mode:"Online",
-        interested:"250"
-    },
-    {
-        title:"Eth Salvador 2024",
-        month:"Dec",
-        date:"16",
-        location:"Gurgaon, India",
-        status:"open",
-        mode:"Online",
-        interested:"250"
-    },
+    }
 ]

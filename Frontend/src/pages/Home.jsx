@@ -2,14 +2,17 @@ import { Appbar } from "../Components/Appbar";
 import { Categories } from "../Components/Categories";
 import { Searchbar } from "../Components/ui/Searchbar";
 import { ToggleSwitch } from "../Components/toggleSwitch";
-import { exploreCategories, popularEvents, jobData } from "../data/fakeData";
+import { exploreCategories, popularEvents, jobData, HackathonData } from "../data/fakeData";
 import { Cards } from "../Components/Cards/Cards"
 import { useState, useEffect } from "react"
 import { Button } from "../Components/ui/Button";
 import { JobCard } from "../Components/Cards/JobCard";
 import { Footer } from "../Components/Footer";
 import { Lock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { HackathonCard } from "../Components/Cards/HackathonCard";
 export const Home = () => {
+    const navigate = useNavigate()
     const [time, setTime] = useState({
         hours: 15,
         minutes: 2,
@@ -72,12 +75,14 @@ export const Home = () => {
             <div className="px-16 py-5 ">
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-orange-100 rounded-sm">
                     {popularEvents.slice(0, 6).map((data, index) => (
-                        <Cards key={index} events={data} />
+                        <Cards key={index} data={data} />
                     ))}
                 </div>
             </div>
             <div className="flex justify-center w-full">
-                <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" />
+                <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" onClick={()=>{
+                    navigate("/events")
+                }} />
             </div>
             {/* rgpv fibohack  */}
             <div className="flex p-16  ">
@@ -127,16 +132,18 @@ export const Home = () => {
 
             {/* best online event  */}
 
-            <h1 className="font-semibold px-20 text-3xl ">Discover Best of Online Events</h1>
+            <h1 className="font-semibold px-20 text-3xl ">Discover Best of Hackathons</h1>
             <div className="px-16 py-5 ">
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-pink-50 rounded-sm">
-                    {popularEvents.slice(0, 3).map((data, index) => (
-                        <Cards key={index} events={data} />
+                <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 p-5 bg-pink-50 rounded-sm">
+                    {HackathonData.slice(0, 4).map((data, index) => (
+                        <HackathonCard key={index} data={data} />
                     ))}
                 </div>
             </div>
             <div className="flex justify-center w-full">
-                <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" />
+                <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300" onClick={()=>{
+                    navigate("/events/hackathons")
+                }} />
             </div>
             {/* // Featured Opportunites*/}
             <h1 className="text-3xl font-semibold px-20 mt-10"> <span className="font-semibold text-blue-700">Featured</span> <span className="text-yellow-500">Opportunties</span>  </h1>
@@ -145,11 +152,11 @@ export const Home = () => {
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 bg-orange-100 rounded-sm"
                     style={{ background: "rgba(247, 245, 255, 1)" }}>
                     {jobData.slice(0, 9).map((data, index) => (
-                        <JobCard key={index} jobs={data} />
+                        <JobCard key={index} data={data} />
                     ))}
                 </div>
                 <div className="flex justify-center w-full">
-                    <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300 mt-5" />
+                    <Button text={" See More"} variant="dark" className="w-96 rounded-full font-semibold bg-gray-200 text-black hover:bg-gray-300 mt-5" onClick={()=>{navigate("/events/volunteer")}} />
                 </div>
             </div>
             <Footer />

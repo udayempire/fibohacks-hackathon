@@ -2,11 +2,11 @@ import { Appbar } from "../Components/Appbar";
 import { Footer } from "../Components/Footer";
 import { Searchbar } from "../Components/ui/Searchbar";
 import { Filter } from "../Components/Filters";
-import { popularEvents } from "../data/fakeData";
-import { Cards } from "../Components/Cards/Cards";
-export const Events = () => {
+import { HackathonData } from "../data/fakeData";
+import { HackathonCard } from "../Components/Cards/HackathonCard";
+export const EventsHackathons = () => {
     return (
-        <div className="relative w-full ">
+        <div className="relative w-full">
             {/* Header Section */}
             <div
                 className="w-full h-[300px] bg-cover relative flex items-center justify-center bg-center flex-col opacity-85"
@@ -27,18 +27,18 @@ export const Events = () => {
                     <Searchbar />
                 </div>
             </div>
-            <div className="flex ">
+            <div className="flex">
 
                 {/* Left Panel */}
                 <Filter />
                 {/* Right Panel  */}
                 <div className="px-10 py-2">
                     <div>
-                        <h1 className="text-3xl font-bold pb-10">Most Exciting Events</h1>
+                        <h1 className="text-3xl font-bold pb-10">Top in Tech</h1>
                     </div>
-                    <div className="grid grid-cols-3 gap-4">
-                        {popularEvents.map((data, index) => (
-                            <Cards key={index} data={data} />
+                    <div className="grid grid-cols-2 gap-4">
+                        {HackathonData.map((data, index) => (
+                            <HackathonCard key={index} data={data} />
                         ))}
                     </div>
                 </div>
