@@ -2,43 +2,44 @@ import { Appbar } from "../Components/Appbar";
 import { Footer } from "../Components/Footer";
 import { Searchbar } from "../Components/ui/Searchbar";
 import { Filter } from "../Components/Filters";
-import { HackathonData } from "../data/fakeData";
-import { HackathonCard } from "../Components/Cards/Hackathon";
-export const Events = () => {
+import { jobData } from "../data/fakeData";
+import { JobCard } from "../Components/Cards/JobCard";
+export const EventsVolunteer = () => {
     return (
         <div className="relative w-full">
             {/* Header Section */}
             <div
                 className="w-full h-[300px] bg-cover relative flex items-center justify-center bg-center flex-col opacity-85"
                 style={{
-                    background:
-                        "linear-gradient(179.92deg, #2B293D 2.91%, #9747FF 23.1%, #FFFFFF 99.93%)",
+                    backgroundImage:
+                        "url('/volunteer-bg.png')"
                 }}
             >
                 <div className="absolute top-0 left-0 w-full">
                     <Appbar />
                 </div>
                 <div className="text-3xl mt-10">
-                    <p className="font-extrabold text-white text-center">
-                        Explore a world of events. Find what excites you!
+                    <p className="font-extrabold text-white text-center text-5xl">
+                        CONNECT , CONTRIBUTE AND <span className="text-blue-700">CREATE IMPACT</span> 
                     </p>
                 </div>
-                <div className="mt-10">
-                    <Searchbar />
+                <div className="mt-10 bg-purple-600 text-white px-48  py-2 rounded-full drop-shadow-xl uppercase text-xl font-semibold ">
+                    Apply For Volunteering Now 
                 </div>
             </div>
-            <div className="flex">
+            <div className="flex bg-zinc-100">
 
                 {/* Left Panel */}
                 <Filter />
                 {/* Right Panel  */}
                 <div className="px-10 py-2">
-                    <div>
+                    <div className="space-y-4 mt-2">
+                        <Searchbar/>
                         <h1 className="text-3xl font-bold pb-10">Top in Tech</h1>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
-                        {HackathonData.map((data, index) => (
-                            <HackathonCard key={index} HackathonData={data} />
+                        {jobData.map((data, index) => (
+                            <JobCard key={index} data={data} />
                         ))}
                     </div>
                 </div>

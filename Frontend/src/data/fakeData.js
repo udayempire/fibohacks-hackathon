@@ -190,3 +190,95 @@ export const jobData=[
         location:"Bhopal,Madhya Pradesh"
     },
 ]
+export const HackathonData=[
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+    {
+        title:"Eth Salvador 2024",
+        month:"Dec",
+        date:"16",
+        location:"Gurgaon, India",
+        status:"open",
+        mode:"Online",
+        interested:"250"
+    },
+]

@@ -9,7 +9,7 @@ export const Button = ({ text, type = 'button', variant = 'default', onClick, cl
   };
 
   // Combine base styles with selected variant styles
-  const buttonStyles = `${baseStyles} ${variantStyles[variant]} ${className}`;
+  const buttonStyles = ` ${className} ${baseStyles} ${variantStyles[variant]} `;
 
   return (
     <button type={type} className={buttonStyles} onClick={onClick}>

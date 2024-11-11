@@ -3,10 +3,10 @@ import { Categories } from "../Components/Categories";
 import { Searchbar } from "../Components/ui/Searchbar";
 import { ToggleSwitch } from "../Components/toggleSwitch";
 import { exploreCategories, popularEvents, jobData } from "../data/fakeData";
-import { Cards } from "../Components/Cards"
+import { Cards } from "../Components/Cards/Cards"
 import { useState, useEffect } from "react"
 import { Button } from "../Components/ui/Button";
-import { JobCard } from "../Components/JobCard";
+import { JobCard } from "../Components/Cards/JobCard";
 import { Footer } from "../Components/Footer";
 import { Lock } from "lucide-react";
 export const Home = () => {
