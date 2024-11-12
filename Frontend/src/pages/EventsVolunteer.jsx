@@ -4,6 +4,7 @@ import { Searchbar } from "../Components/ui/Searchbar";
 import { Filter } from "../Components/Filters";
 import { jobData } from "../data/fakeData";
 import { JobCard } from "../Components/Cards/JobCard";
+import { SelectTypes } from "../Components/selectTypes";
 export const EventsVolunteer = () => {
     return (
         <div className="relative w-full">
@@ -35,8 +36,9 @@ export const EventsVolunteer = () => {
                 <div className="px-10 py-2">
                     <div className="space-y-4 mt-2">
                         <Searchbar/>
-                        <h1 className="text-3xl font-bold pb-10">Top in Tech</h1>
+                        <h1 className="text-3xl font-bold pb-10">Dont Miss Networking With Us</h1>
                     </div>
+                    <SelectTypes/>
                     <div className="grid grid-cols-2 gap-4">
                         {jobData.map((data, index) => (
                             <JobCard key={index} data={data} />

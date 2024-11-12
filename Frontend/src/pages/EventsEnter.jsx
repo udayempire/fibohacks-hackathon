@@ -4,6 +4,7 @@ import { Searchbar } from "../Components/ui/Searchbar";
 import { Filter } from "../Components/Filters";
 import { EntertaimentData} from "../data/fakeData";
 import { EntertainmentCards } from "../Components/Cards/EntertainmentCards";
+import { SelectTypes } from "../Components/selectTypes";
 export const EventsEntertainment = () => {
     return (
         <div className="relative w-full ">
@@ -36,6 +37,7 @@ export const EventsEntertainment = () => {
                     <div>
                         <h1 className="text-3xl font-bold pb-10">Top in Entertaiment</h1>
                     </div>
+                    <SelectTypes />
                     <div className="grid grid-cols-3 gap-10">
                         {EntertaimentData.map((data, index) => (
                             <EntertainmentCards key={index} data={data} />

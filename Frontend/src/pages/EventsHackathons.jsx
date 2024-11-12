@@ -4,6 +4,7 @@ import { Searchbar } from "../Components/ui/Searchbar";
 import { Filter } from "../Components/Filters";
 import { HackathonData } from "../data/fakeData";
 import { HackathonCard } from "../Components/Cards/HackathonCard";
+import { SelectTypes } from "../Components/selectTypes";
 export const EventsHackathons = () => {
     return (
         <div className="relative w-full">
@@ -36,6 +37,7 @@ export const EventsHackathons = () => {
                     <div>
                         <h1 className="text-3xl font-bold pb-10">Top in Tech</h1>
                     </div>
+                    <SelectTypes/>
                     <div className="grid grid-cols-2 gap-4">
                         {HackathonData.map((data, index) => (
                             <HackathonCard key={index} data={data} />

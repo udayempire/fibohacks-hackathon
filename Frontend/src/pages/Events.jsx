@@ -4,6 +4,7 @@ import { Searchbar } from "../Components/ui/Searchbar";
 import { Filter } from "../Components/Filters";
 import { popularEvents } from "../data/fakeData";
 import { Cards } from "../Components/Cards/Cards";
+import { SelectTypes } from "../Components/selectTypes";
 export const Events = () => {
     return (
         <div className="relative w-full ">
@@ -36,6 +37,7 @@ export const Events = () => {
                     <div>
                         <h1 className="text-3xl font-bold pb-10">Most Exciting Events</h1>
                     </div>
+                    <SelectTypes />
                     <div className="grid grid-cols-3 gap-4">
                         {popularEvents.map((data, index) => (
                             <Cards key={index} data={data} />
