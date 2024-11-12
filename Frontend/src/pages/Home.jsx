@@ -121,7 +121,7 @@ export const Home = () => {
                             text={
                                 <div className="flex items-center justify-center gap-2 w-full">
                                     <Lock className="h-4 w-4" />
-                                    <span>Get Started</span>
+                                    <span>Apply Now</span>
                                 </div>
                             } variant="dark"
                             className="w-[670px] bg-green-900 hover:bg-green-800 border-0 text-white font-semibold flex items-center justify-center"
