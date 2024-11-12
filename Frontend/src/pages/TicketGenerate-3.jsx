@@ -60,7 +60,7 @@ export const TicketGenerate3 = () => {
             <div className="flex justify-center p-5 items-center gap-2  ">
                 <div >
                     <Button text={"Save and Continue"} variant="dark" onClick={() => {
-                        navigate("/ticket-generate-2")
+                        navigate("/ticket-generate-4")
                     }} />
                 </div>
                 <div className="text-blue-950 text-lg cursor-pointer " onClick={() => {
