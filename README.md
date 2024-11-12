@@ -8,11 +8,7 @@ Event Sphere is a modern web application designed to make event management and d
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -52,7 +48,9 @@ Event sphere allows users to explore and manage events effortlessly. The platfor
    ```bash
    git clone https://github.com/yourusername/eventify.git
    ```
-## Setting up Frontend
+## Setup-and-installation
+
+**Setting up Frontend**
 
 Follow these steps to get a local copy of the project up and running:
 
