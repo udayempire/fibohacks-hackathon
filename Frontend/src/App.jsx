@@ -7,6 +7,7 @@ import { EventsVolunteer } from './pages/EventsVolunteer'
 import { EventsHackathons } from './pages/EventsHackathons'
 import { EventsEntertainment } from './pages/EventsEnter'  
 import './App.css'
+import { TicketCreate } from './pages/TicketCreate'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/events/volunteer" element={<EventsVolunteer />} />
           <Route path="/events/hackathons" element={<EventsHackathons />} />
           <Route path="/events/entertainments" element={<EventsEntertainment />} />
+          <Route path="/ticket-generate" element={<TicketCreate />} />
         </Routes>
       </BrowserRouter>
 
