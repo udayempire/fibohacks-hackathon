@@ -2,7 +2,7 @@ Here's a comprehensive `README.md` file for your Eventify project:
 
 ---
 
-# Eventify
+# Event Sphere
 
 Eventify is a modern web application designed to make event management and discovery easy and efficient. It provides features like personalized event recommendations, a responsive user interface, and seamless integration with social media platforms for an enhanced user experience.
 
