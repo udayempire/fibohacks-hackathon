@@ -42,7 +42,7 @@ Event sphere allows users to explore and manage events effortlessly. The platfor
   - Express.js
   - MongoDB
 - **Authentication**: 
-  - Firebase Authentication
+  - JWT
 - **State Management**: 
   - Redux
 - **Icons**: 
