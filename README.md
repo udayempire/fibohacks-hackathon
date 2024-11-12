@@ -20,7 +20,7 @@ Eventify is a modern web application designed to make event management and disco
 
 ## Overview
 
-Eventify allows users to explore and manage events effortlessly. The platform supports user authentication, both through custom credentials and social media logins. Users can discover events tailored to their preferences and manage event-related activities through a user-friendly dashboard.
+Event sphere allows users to explore and manage events effortlessly. The platform supports user authentication, both through custom credentials and social media logins. Users can discover events tailored to their preferences and manage event-related activities through a user-friendly dashboard.
 
 ## Features
 
