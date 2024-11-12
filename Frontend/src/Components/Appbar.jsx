@@ -16,7 +16,7 @@ export const Appbar = () => {
             <div className="flex gap-2">
                 <Button text={"Logout"}></Button>
                 <Button text={"Create Event"} onClick={()=>{
-                    navigate("/ticket-generate")
+                    navigate("/ticket-generate-1")
                 }}></Button>
             </div>
         </div>

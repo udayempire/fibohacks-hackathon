@@ -3,8 +3,10 @@ import { Appbar } from "../Components/Appbar";
 import { Link } from "react-router-dom";
 import { Input } from "../Components/ui/Input";
 import { Button } from "../Components/ui/Button";
+import { useNavigate } from "react-router-dom";
 
-export const TicketCreate = () => {
+export const TicketGenerate1 = () => {
+    const navigate = useNavigate()
     return (
         <div className="relative w-full">
             {/* Appbar fixed at the top */}
@@ -60,7 +62,9 @@ export const TicketCreate = () => {
                 </div>
             </div>
             <div className="flex justify-center p-5">
-                <Button text={"Next"} variant="dark"   />
+                <Button text={"Save and Continue"} variant="dark" onClick={()=>{
+                    navigate("/ticket-generate-2")
+                }}/>
             </div>
         </div>
     );

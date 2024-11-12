@@ -7,7 +7,8 @@ import { EventsVolunteer } from './pages/EventsVolunteer'
 import { EventsHackathons } from './pages/EventsHackathons'
 import { EventsEntertainment } from './pages/EventsEnter'  
 import './App.css'
-import { TicketCreate } from './pages/TicketCreate'
+import { TicketGenerate1 } from './pages/TicketGenerate-1'
+import { TicketGenerate2 } from './pages/TicketGenerate-2'
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="/events/volunteer" element={<EventsVolunteer />} />
           <Route path="/events/hackathons" element={<EventsHackathons />} />
           <Route path="/events/entertainments" element={<EventsEntertainment />} />
-          <Route path="/ticket-generate" element={<TicketCreate />} />
+          <Route path="/ticket-generate-1" element={<TicketGenerate1 />} />
+          <Route path="/ticket-generate-2" element={<TicketGenerate2/>}/>
         </Routes>
       </BrowserRouter>
 
