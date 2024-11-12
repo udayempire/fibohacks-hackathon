@@ -11,6 +11,7 @@ import { TicketGenerate2 } from './pages/TicketGenerate-2'
 import { TicketGenerate3 } from './pages/TicketGenerate-3'
 import { TicketGenerate4 } from './pages/TicketGenerate-4'
 import './App.css'
+import { Event } from './pages/Event'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/ticket-generate-2" element={<TicketGenerate2/>}/>
           <Route path="/ticket-generate-3" element={<TicketGenerate3/>}/>
           <Route path="/ticket-generate-4" element={<TicketGenerate4/>}/>
+          <Route path='/event-info' element={<Event/>}/>
         </Routes>
       </BrowserRouter>
 
