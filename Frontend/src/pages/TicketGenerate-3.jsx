@@ -39,8 +39,8 @@ export const TicketGenerate3 = () => {
                         <div className="flex flex-col items-center gap-3">
                             <LucideTicket/>
                             <div className="space-y-1">
-                                <h1 className="font-semibold text-md *:">Paid Ticket</h1>
-                                <p className="text-gray-600">User needs to purchase my Ticket</p>
+                                <h1 className="font-semibold text-md *:">Free Ticket</h1>
+                                <p className="text-gray-600">Audience Dont have to spend money</p>
                             </div>
                         </div>
                     } />
@@ -63,11 +63,11 @@ export const TicketGenerate3 = () => {
                         navigate("/ticket-generate-4")
                     }} />
                 </div>
-                <div className="text-blue-950 text-lg cursor-pointer " onClick={() => {
+                <Button text={"Go Back"} className="text-blue-950 text-lg cursor-pointer " onClick={() => {
                     navigate(-1)
                 }}>
                     Go Back
-                </div>
+                </Button>
             </div>
         </div>
     );

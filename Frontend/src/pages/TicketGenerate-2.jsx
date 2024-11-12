@@ -38,11 +38,11 @@ export const TicketGenerate2 = () => {
                         navigate("/ticket-generate-3")
                     }} />
                 </div>
-                <div className="text-blue-950 text-lg cursor-pointer " onClick={() => {
+                <Button text={"Go Back"} className="text-blue-950 text-lg cursor-pointer " onClick={() => {
                     navigate(-1)
                 }}>
                     Go Back
-                </div>
+                </Button>
             </div>
         </div>
     );
