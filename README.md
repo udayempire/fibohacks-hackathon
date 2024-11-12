@@ -73,3 +73,5 @@ Follow these steps to get a local copy of the project up and running:
    npm run dev
    ```
    Your application will be running.
+   ![image](https://github.com/user-attachments/assets/5b8557ac-6ff7-473b-89ca-d7106925888b)
+
