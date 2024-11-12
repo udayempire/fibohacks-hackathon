@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom"
 export const JobCard = ({ data }) => {
+  const navigate = useNavigate()
     return (
-      <div className="space-y-5 max-w-lg bg-white p-5 rounded-lg drop-shadow-xl">
+      <div className="space-y-5 max-w-lg bg-white p-5 rounded-lg drop-shadow-xl cursor-pointer"
+       onClick={() => {
+        navigate("/event-info")
+    }} 
+      >
 
         <div className="flex justify-between">
           <div className="text-left">

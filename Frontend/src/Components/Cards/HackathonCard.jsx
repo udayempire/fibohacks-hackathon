@@ -1,7 +1,12 @@
 import { Button } from "../ui/Button"
-
+import { useNavigate } from "react-router-dom"
 export const HackathonCard = ({data}) => {
-    return <div>
+    const navigate = useNavigate()
+    return <div
+    className="cursor-pointer" onClick={() => {
+        navigate("/event-info")
+    }} 
+    >
         <div className="flex p-1 bg-gray-100 rounded-lg w-full max-w-xl items-center drop-shadow-xl">
             <img src={data.coverImg} className="w-72 h-52 rounded-lg " alt="" />
             <div className="space-y-4 px-6 py-2">
@@ -16,7 +21,7 @@ export const HackathonCard = ({data}) => {
                     <div className="p-2 bg-gray-300 rounded-md">{data.interested}+</div>
                 </div>
                 <div className="p-2">
-                <Button text={"Apply Now"} className="bg-purple-600 text-white w-full max-w-auto" />
+                <Button text={"Apply Now"} variant="dark" className="bg-purple-600 hover:bg-purple-700 text-white w-full max-w-auto" />
                 </div>
             </div>
         </div>

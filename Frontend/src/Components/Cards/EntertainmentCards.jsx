@@ -1,5 +1,11 @@
+import { useNavigate } from "react-router-dom"
 export const EntertainmentCards = ({data}) => {
-    return <div className="w-80  bg-zinc-50">
+    const navigate = useNavigate()
+    return <div className="w-80  bg-zinc-50 cursor-pointer"
+     onClick={() => {
+        navigate("/event-info")
+    }} 
+    >
         <img src="/enter.png" alt="" className="w-full rounded-t-lg " />
         <div className="flex gap-2 p-4">
             <div className="p-2">

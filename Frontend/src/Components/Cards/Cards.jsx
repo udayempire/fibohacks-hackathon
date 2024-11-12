@@ -1,5 +1,11 @@
+import { useNavigate } from "react-router-dom"
 export const Cards = ({ data }) => {
-    return <div>
+    const navigate = useNavigate()
+    return <div
+        className="cursor-pointer" onClick={() => {
+            navigate("/event-info")
+        }} 
+        >
         <div className="flex flex-col bg-white rounded-lg drop-shadow-xl">
             <img src={data.coverImg} alt="" />
             <div className="flex gap-4 p-4">

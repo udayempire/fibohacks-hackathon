@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "../Components/ui/Button";
-import { Input } from "../Components/ui/Input";
+import { Input } from "../Components/Input";
+import { useNavigate } from "react-router-dom";
 export const Signup = () => {
+    const navigate = useNavigate()
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 w-screen h-screen bg-zinc-50">
             {/*right*/}
@@ -34,7 +36,11 @@ export const Signup = () => {
                     <Input label="Password" type="password" id="password" placeholder="Enter Your Password" />
                 </div>
 
-                <Button text="Create Account" variant="dark" className="grid w-full max-w-xs md:max-w-sm" />
+                <Button text="Create Account" variant="dark" className="grid w-full max-w-xs md:max-w-sm"
+                    onClick={() => {
+                        navigate("/")
+                    }}
+                />
                 <p className="w-full max-w-xs md:max-w-lg text-center text-sm pt-5">
                     Click “Sign up” to agree to our <span className="underline underline-offset-2 cursor-pointer">Terms of Service </span> and acknowledge that our <span className="underline underline-offset-2 cursor-pointer">Privacy Policy</span> applies to you.
                 </p>

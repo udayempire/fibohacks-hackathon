@@ -1,7 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { Appbar } from "../Components/Appbar";
 import { Link } from "react-router-dom";
-import { Input } from "../Components/ui/Input";
+import { Input } from "../Components/Input";
 import { Button } from "../Components/ui/Button";
 import { useNavigate } from "react-router-dom";
 

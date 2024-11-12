@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../Components/ui/Button";
-import { Input } from "../Components/ui/Input";
+import { Input } from "../Components/Input";
 import { useDispatch } from "react-redux";
 import { userLogin } from "../store/Action/Auth";
+import { useNavigate } from "react-router-dom";
 
 export const Signin = () => {
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
@@ -36,7 +38,7 @@ const dispatch = useDispatch()
             {/* Right Panel */}
             <div className="flex flex-col w-full h-full justify-center items-center gap-4">
                 <div>
-                    <h1 className="font-bold text-3xl text-center">Create Account</h1>
+                    <h1 className="font-bold text-3xl text-center">Login to Account</h1>
                     <h3 className="font-medium text-slate-500 p-2 w-full max-w-sm">
                         Already have an Account?
                         <Link className="underline cursor-pointer hover:text-blue-700" to="/signup"> Sign Up</Link>
@@ -82,7 +84,11 @@ const dispatch = useDispatch()
                     />
                 </div>
 
-                <Button text="Signin" type="submit" variant="dark" className="grid w-full max-w-xs md:max-w-sm" />
+                <Button text="Signin" type="submit" variant="dark" className="grid w-full max-w-xs md:max-w-sm"
+                 onClick={()=>{
+                    navigate("/")
+                }} 
+                />
                 <p className="w-full max-w-xs md:max-w-lg text-center text-sm pt-5">
                     Click “Sign in” to agree to our <span className="underline underline-offset-2 cursor-pointer">Terms of Service</span> and acknowledge that our <span className="underline underline-offset-2 cursor-pointer">Privacy Policy</span> applies to you.
                 </p>

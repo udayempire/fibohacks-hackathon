@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
 import { Button } from "./ui/Button"
 import { CalendarPlus, LogIn } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 export const Footer = () => {
+    const navigate = useNavigate()
     return <div>
         <div className="grid grid-cols-5 p-10 bg-purple-700 text-gray-300"
             style={{ background: "linear-gradient(-225deg, #4c2d7a 0%, #7053c4 53%, #4b3b98 100%)" }}>
@@ -55,13 +57,18 @@ export const Footer = () => {
                             <span>Create Event</span>
                         </div>
                     }
-                /><br/>
+                    onClick={() => {
+                        navigate("/ticket-generate-1")
+                    }}
+                /><br />
                 <Button text={
                     <div className="flex justify-center items-center gap-2 w-[7rem]">
-                        <LogIn className="h-4 w-4"/>
+                        <LogIn className="h-4 w-4" />
                         <span>Get Started</span>
                     </div>
-                } />
+                } onClick={() => {
+                    navigate("/events")
+                }} />
             </div>
         </div>
     </div>
