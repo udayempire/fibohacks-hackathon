@@ -16,7 +16,7 @@ import { Event } from './pages/Event'
 function App() {
   return (
     <>
-      <BrowserRouter>
+
         <Routes>
           <Route path='/signup' element={<Signup />} />
           <Route path='/signin' element={<Signin />} />
@@ -31,7 +31,7 @@ function App() {
           <Route path="/ticket-generate-4" element={<TicketGenerate4/>}/>
           <Route path='/event-info' element={<Event/>}/>
         </Routes>
-      </BrowserRouter>
+
 
     </>
   )

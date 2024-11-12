@@ -5,7 +5,7 @@ const instance = axios.create({
   // Set your base URL (adjust based on production/development)
   // baseURL: "https://flatemate-backend.vercel.app/api/v1",
   // baseURL: "https://flatematebackend.onrender.com/api/v1",
-  baseURL: "http://localhost:5001/api/v1",
+  baseURL: "https://eventsphere-hackathon.onrender.com/api/v1",
   // baseURL: "https://mycozee.vercel.app",
   withCredentials: true,
 });
